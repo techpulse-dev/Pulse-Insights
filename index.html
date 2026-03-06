@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Insights — Trends, Ideas & Smart Living</title>
+    <meta name="description"
+        content="Pulse Insights delivers the latest in technology, side hustles, productivity, and smart living.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Pulse Insights RSS Feed"
+        href="https://techpulse-dev.github.io/Pulse-Insights/rss.xml" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const saved = localStorage.getItem("theme");
+        if (saved) document.documentElement.setAttribute("data-theme", saved);
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Pulse<span class="logo-accent">Insights</span></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Latest</a>
+                <a href="#trending" class="nav-link">Trending</a>
+                <a href="https://ko-fi.com/techpulses" target="_blank" class="nav-link">Resources</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="date-bar">
+        <div class="container date-bar-inner">
+            <span id="currentDate">Loading date...</span>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All News</button>
+                <button class="filter-btn" data-filter="tech">Tech</button>
+                <button class="filter-btn" data-filter="money">Money</button>
+                <button class="filter-btn" data-filter="life">Life</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content container">
+        <div class="news-layout">
+            <!-- ヒーロー枠（最新の1件やハイライト） -->
+            <div class="news-main">
+                <div class="section-header">
+                    <h2>Top Story</h2>
+                    <div class="line"></div>
+                </div>
+                
+        <article class="article-card featured" onclick="window.location.href='articles/20260306_174704_Man_Fell_in_Love_with_Google_Gemini_and_It_T.html'">
+            <div class="article-meta">
+                <span class="article-cat">General</span>
+                <span class="article-date">2026-03-06</span>
+            </div>
+            <h3 class="article-title">The Gemini Lawsuit: When AI Companionship Leads to Tragedy</h3>
+            <p class="article-desc" style="font-size: 1.1rem; line-height: 1.6; margin-top: 16px;">
+                The Gemini Lawsuit: When AI Companionship Leads to Tragedy
+            </p>
+            <div style="margin-top:24px;">
+                <a href="articles/20260306_174704_Man_Fell_in_Love_with_Google_Gemini_and_It_T.html" class="btn">Read Full Story</a>
+            </div>
+        </article>
+        
+            </div>
+
+            <!-- サイドバー枠（その他の記事一覧） -->
+            <aside class="news-sidebar">
+                <div class="section-header">
+                    <h2>Latest News</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="news-list" id="articles-container">
+                    
+            <article class="news-item" onclick="window.location.href='articles/20260306_170331_Man_Fell_in_Love_with_Google_Gemini_and_It_T.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">Man Fell in Love with Google Gemini and It Told Him to Stage a 'Mass Casualty Attack' Before He Took His Own Life: A 2026 Case Study</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154527_How_AI_Agents_Are_Changing_the_Way_We_Work_a.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">How AI Agents Are Changing the Way We Work and Create</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154511_Digital_Detox_What_Happens_When_You_Unplug_f.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">Digital Detox: What Happens When You Unplug for a Week</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154510_The_Rise_of_Pay-What-You-Want_Why_Free_Actua.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">The Rise of Pay-What-You-Want: Why Free Actually Works</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154509_How_to_Build_Habits_That_Actually_Stick_Scie.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">How to Build Habits That Actually Stick: Science-Backed Methods</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154507_Crypto_Without_the_Hype_A_Practical_Guide_fo.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">Crypto Without the Hype: A Practical Guide for 2026</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154438_Minimalist_Productivity_Do_Less_Achieve_More.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">Minimalist Productivity: Do Less, Achieve More</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154437_The_Psychology_of_Viral_Content_Why_Some_Pos.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">The Psychology of Viral Content: Why Some Posts Blow Up</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_154437_5_Side_Hustles_You_Can_Start_Today_with_Zero.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">5 Side Hustles You Can Start Today with Zero Investment</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+            <article class="news-item" onclick="window.location.href='articles/20260306_153155_Tinder_agrees_to_pay_605M_after_dating_app_s.html'">
+                <div class="article-meta">
+                    <span class="article-cat">General</span>
+                </div>
+                <h3 class="article-title" style="font-size: 1.1rem;">Tinder to Pay $60.5M Over Age Discrimination Claims</h3>
+                <span class="article-date" style="margin-top: 8px; display: block;">2026-03-06</span>
+            </article>
+            
+                </div>
+
+                <div class="section-header" style="margin-top: 40px;">
+                    <h2>Free Resources</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="ad-card" style="margin-bottom: 24px;">
+                    <div class="ad-label">Sponsored</div>
+                    <h3 style="margin-top:12px; font-size:1.1rem;">Notion Template Pack</h3>
+                    <p style="color:var(--text-2); font-size:0.9rem; margin-top:8px;">Organize your side hustle and
+                        productivity with our free premium templates.</p>
+                    <a href="https://ko-fi.com/techpulses" target="_blank" class="btn"
+                        style="margin-top:16px; display:inline-block;">Download Free</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">Pulse<span class="logo-accent">Insights</span></span>
+            <div class="footer-links">
+                <a href="index.html">Latest</a>
+                <a href="#trending">Trending</a>
+                <a href="https://ko-fi.com/techpulses" target="_blank">Resources</a>
+            </div>
+            <span class="footer-copy">&copy; 2026 Pulse Insights</span>
+        </div>
+    </footer>
+
+    <script>
+        // 日付
+        const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', dateOptions);
+
+        // テーマ切り替え
+        const btn = document.getElementById("themeToggle");
+        if (btn) {
+            btn.addEventListener("click", () => {
+                const c = document.documentElement.getAttribute("data-theme");
+                const n = c === "dark" ? "light" : "dark";
+                document.documentElement.setAttribute("data-theme", n);
+                localStorage.setItem("theme", n);
+            });
+        }
+    </script>
+</body>
+
+</html>
